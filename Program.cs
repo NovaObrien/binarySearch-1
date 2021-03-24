@@ -21,11 +21,6 @@ namespace BinarySearch_1
           Console.WriteLine("Target is not present");
           break;
         }
-        else if (nums[guess] == target)
-        {
-          Console.WriteLine("Found Target is equal to " + guess);
-          break;
-        }
         else if (nums[guess] < target)
         {
           min = guess + 1;
@@ -36,6 +31,8 @@ namespace BinarySearch_1
           max = guess - 1;
           Console.WriteLine("Guess is to High " + guess);
         }
+        Console.WriteLine("Found Target is equal to " + guess);
+
       }
     }
   }
