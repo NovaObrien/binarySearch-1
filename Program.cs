@@ -6,16 +6,18 @@ namespace BinarySearch_1
   {
     static void Main(string[] args)
     {
-      int target = 2;
+      int target = 3;
+      int[] nums = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
       int guess = 0;
-      int max = 9;
+      int max = nums.Length - 1;
       //   TODO Max is wrong
       int min = 0;
-      int[] nums = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+      //   Console.WriteLine((max - min) / 2);
 
       while (guess != target)
       {
-        guess = max - min / 2;
+        guess = (max + min) / 2;
         Console.WriteLine("Current Guess " + guess);
         if (max < min)
         {
