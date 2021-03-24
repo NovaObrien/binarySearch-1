@@ -6,9 +6,9 @@ namespace BinarySearch_1
   {
     static void Main(string[] args)
     {
-      int target = 3;
+      int target = 10;
       int[] nums = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-      int guess = 1;
+      int guess = 0;
       int max = nums.Length;
       int min = 0;
 
@@ -28,7 +28,7 @@ namespace BinarySearch_1
           Console.WriteLine("Found Target is equal to " + guess);
           break;
         }
-        else if (nums[guess] < target)
+        else if (nums[guess - 1] < target)
         {
           min = guess + 1;
           Console.WriteLine("Guess is to Low " + guess);
