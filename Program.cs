@@ -8,9 +8,8 @@ namespace BinarySearch_1
     {
       int target = 3;
       int[] nums = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-      int guess = 0;
-      int max = nums.Length - 1;
-      //   TODO Max is wrong
+      int guess = 1;
+      int max = nums.Length;
       int min = 0;
 
       //   Console.WriteLine((max - min) / 2);
