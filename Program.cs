@@ -6,7 +6,7 @@ namespace BinarySearch_1
   {
     static void Main(string[] args)
     {
-      int target = 8;
+      int target = 2;
       int guess = 0;
       int max = 9;
       //   TODO Max is wrong
@@ -16,9 +16,15 @@ namespace BinarySearch_1
       while (guess != target)
       {
         guess = max - min / 2;
+        Console.WriteLine("Current Guess " + guess);
         if (max < min)
         {
           Console.WriteLine("Target is not present");
+          break;
+        }
+        else if (guess == target)
+        {
+          Console.WriteLine("Found Target is equal to " + guess);
           break;
         }
         else if (nums[guess] < target)
@@ -31,7 +37,6 @@ namespace BinarySearch_1
           max = guess - 1;
           Console.WriteLine("Guess is to High " + guess);
         }
-        Console.WriteLine("Found Target is equal to " + guess);
 
       }
     }
