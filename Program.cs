@@ -4,6 +4,26 @@
 // If the guess was too low, set minminm, i, n to be one larger than the guess.
 // If the guess was too high, set maxmaxm, a, x to be one smaller than the guess.
 // Go back to step two.
-let min = 1;
-let max = n;
-let primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97];
+// let min = 1;
+// let max = 24;
+// let primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97];
+
+// function binarySearch()
+// {
+//   while (userChoise != computerChoice)
+//   {
+
+//   }
+// }
+
+using System;
+namespace BinarySearch_1
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      Console.WriteLine("Hello Wolrd!");
+    }
+  }
+}
